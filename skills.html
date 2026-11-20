@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f4ef">
+  <meta name="description" content="Neo's skills and tools across AI workflows, project management, software prototyping and process improvement.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Skills & tools | Neo">
+  <meta property="og:description" content="What I've used in projects, what I've studied, and what I'm working on next.">
+  <meta property="og:url" content="https://neokx.me/skills.html">
+  <link rel="canonical" href="https://neokx.me/skills.html">
+  <title>Skills & tools | Neo</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f6f4ef;
+      --ink: #232b27;
+      --muted: #58625c;
+      --line: #d8d9d1;
+      --accent: #a14d36;
+      --soft: #ece9e1;
+      --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.65 var(--sans); }
+    a { color: inherit; text-underline-offset: 5px; text-decoration-color: var(--accent); }
+    a:hover { color: var(--accent); }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; border-radius: 2px; }
+    ::selection { background: #e9c6b8; color: #241f1d; }
+    .wrap { width: min(100% - 72px, 1190px); margin-inline: auto; }
+    .site-header { border-bottom: 1px solid var(--line); }
+    .nav { min-height: 84px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { font: 700 29px/1 var(--sans); letter-spacing: -.07em; text-decoration: none; }
+    .brand span { color: var(--accent); }
+    .nav-links { display: flex; flex-wrap: wrap; gap: clamp(16px, 3vw, 38px); align-items: center; }
+    .nav-links a { text-decoration: none; font-size: 13px; font-weight: 650; letter-spacing: .08em; text-transform: uppercase; }
+    .nav-links a[aria-current="page"] { color: var(--accent); text-decoration: underline; text-underline-offset: 7px; }
+    .eyebrow { color: var(--muted); font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .15em; }
+    .intro { padding-block: clamp(70px, 9vw, 116px) 76px; border-bottom: 1px solid var(--ink); }
+    h1 { max-width: 820px; margin: 20px 0 24px; font-size: clamp(48px, 6.8vw, 85px); line-height: 1.1; letter-spacing: -.055em; }
+    .intro p { max-width: 665px; color: #465048; font-size: clamp(17px, 1.5vw, 20px); margin: 0; }
+    .skills-section { display: grid; grid-template-columns: minmax(220px, .43fr) minmax(0, 1fr); column-gap: clamp(30px, 5vw, 84px); padding: 56px 0 70px; border-bottom: 1px solid var(--line); }
+    .section-heading { margin: 0; font-size: clamp(27px, 3vw, 39px); line-height: 1.23; letter-spacing: -.035em; }
+    .section-heading small { display: block; color: var(--accent); font-size: 12px; letter-spacing: .13em; text-transform: uppercase; margin-bottom: 12px; }
+    .section-note { margin: 17px 0 0; max-width: 260px; font-size: 14px; color: var(--muted); line-height: 1.65; }
+    .skills-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); column-gap: 36px; row-gap: 30px; }
+    .skill { padding-top: 13px; border-top: 1px solid var(--line); }
+    .skill h3 { font-size: 18px; line-height: 1.3; margin: 0 0 9px; font-weight: 700; letter-spacing: -.02em; }
+    .skill p { color: #515a53; margin: 0; font-size: 15px; }
+    .tools { font-size: 12px; color: var(--muted); margin-top: 12px; }
+    .credential { display: grid; grid-template-columns: 1fr auto; gap: 20px; align-items: center; background: var(--soft); padding: 28px 32px; margin: 40px 0 110px; }
+    .credential h2 { margin: 0 0 7px; font-size: clamp(19px, 2vw, 25px); letter-spacing: -.03em; line-height: 1.3; }
+    .credential p { margin: 0; font-size: 14px; color: var(--muted); }
+    .credential .eyebrow { margin: 0 0 12px; color: var(--accent); }
+    .credential-label { font-size: 12px; color: var(--muted); white-space: nowrap; }
+    .contact { color: #f5f2e9; background: #252e29; padding: 52px 0 56px; }
+    .contact p { max-width: 560px; color: #d2d5ca; margin: 10px 0 20px; }
+    .contact h2 { font-size: clamp(28px, 3vw, 40px); letter-spacing: -.04em; margin: 0; }
+    .contact a { color: #f5f2e9; }
+    .footer { color: #c8cdc4; background: #252e29; border-top: 1px solid #455147; padding-block: 22px; }
+    .footer .wrap { display: flex; justify-content: space-between; gap: 12px; font-size: 12px; }
+    @media (max-width: 760px) {
+      .skills-section { grid-template-columns: 1fr; row-gap: 32px; }
+      .section-note { max-width: 600px; }
+    }
+    @media (max-width: 620px) {
+      .wrap { width: min(100% - 36px, 1190px); }
+      .nav { min-height: 74px; flex-wrap: wrap; gap: 12px; padding-block: 17px; }
+      .nav-links { gap: 12px 18px; }
+      .nav-links a { font-size: 11px; }
+      .intro { padding-block: 72px 56px; }
+      .skills-section { padding-block: 39px 50px; }
+      .skills-grid { grid-template-columns: 1fr; row-gap: 24px; }
+      .credential { grid-template-columns: 1fr; margin-bottom: 70px; padding: 24px; gap: 16px; }
+      .footer .wrap { flex-direction: column; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="./" aria-label="Neo, home">neo<span>.</span></a>
+      <div class="nav-links">
+        <a href="./#work">Work</a>
+        <a href="skills.html" aria-current="page">Skills</a>
+        <a href="./#about">About</a>
+        <a href="./#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <main class="wrap">
+    <header class="intro">
+      <div class="eyebrow">Background / skills / tools</div>
+      <h1>Skills &amp; tools</h1>
+      <p>I work across project planning, software prototypes and automation. Here's what I've used, what I've studied, and where I'm still building experience.</p>
+    </header>
+
+    <section class="skills-section" aria-labelledby="ai-title">
+      <div>
+        <h2 class="section-heading" id="ai-title"><small>01 / Current focus</small>AI &amp; automation</h2>
+        <p class="section-note">Hands-on workflow tools and early-stage AI assistant design. I'm not presenting these as production AI systems.</p>
+      </div>
+      <div class="skills-grid">
+        <article class="skill">
+          <h3>Workflow automation</h3>
+          <p>I've worked with n8n, APIs and webhooks to connect tasks and move information between systems. I look for repetitive steps that can be made easier to review or run.</p>
+          <div class="tools">n8n · APIs · Webhooks</div>
+        </article>
+        <article class="skill">
+          <h3>AI assistant design</h3>
+          <p>For Local Assist, I've been designing how a personal assistant could work across devices while keeping private data separated and higher-risk actions under human control. This work is still at the design stage.</p>
+          <div class="tools">Agent workflows · Data boundaries · Human approval</div>
+        </article>
+        <article class="skill">
+          <h3>AI-assisted workflows</h3>
+          <p>I use AI tools to research tasks, structure information and work through draft solutions. I'm developing the engineering skills needed to turn those workflows into tested applications.</p>
+          <div class="tools">Workflow design · Review steps · Experimentation</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="skills-section" aria-labelledby="product-title">
+      <div>
+        <h2 class="section-heading" id="product-title"><small>02 / Planning and delivery</small>Product &amp; project work</h2>
+        <p class="section-note">I enjoy understanding a problem before deciding how to build the solution.</p>
+      </div>
+      <div class="skills-grid">
+        <article class="skill">
+          <h3>Project management</h3>
+          <p>I completed Google's Project Management Professional Certificate on Coursera. It gave me a structured foundation in project planning, scope, schedules and risk management.</p>
+          <div class="tools">Google Project Management · Coursera</div>
+        </article>
+        <article class="skill">
+          <h3>Requirements &amp; user flows</h3>
+          <p>For DryNest, my final-year team project, I've worked on the requirements and user flows for automatic, manual and scheduled device control.</p>
+          <div class="tools">Use cases · Flowcharts · System planning</div>
+        </article>
+        <article class="skill">
+          <h3>Process improvement</h3>
+          <p>At work, I've created reusable formulas and written a user guide and SOP for a repeated data-processing task. I prefer changes that make a process easier for the next person to follow.</p>
+          <div class="tools">Data workflows · Documentation · SOPs</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="skills-section" aria-labelledby="build-title">
+      <div>
+        <h2 class="section-heading" id="build-title"><small>03 / Technical foundation</small>Building &amp; testing</h2>
+        <p class="section-note">These are supporting skills I use to turn a planned flow into something people can try.</p>
+      </div>
+      <div class="skills-grid">
+        <article class="skill">
+          <h3>Web prototypes</h3>
+          <p>I've built responsive sites and interactive forms with HTML, CSS and JavaScript. MOTIVE is a concept project where I worked on bilingual content and a three-step enquiry flow.</p>
+          <div class="tools">HTML · CSS · JavaScript · Figma</div>
+        </article>
+        <article class="skill">
+          <h3>Data &amp; connected systems</h3>
+          <p>I've worked with Firebase and MongoDB in project settings. DryNest also involves an ESP32-based system, with embedded hardware handled by my teammate and the PWA still in development.</p>
+          <div class="tools">Firebase · MongoDB · PWA · IoT</div>
+        </article>
+        <article class="skill">
+          <h3>Testing &amp; iteration</h3>
+          <p>I check how prototypes behave at different screen sizes, review form interactions and revise layouts when something is hard to use or breaks.</p>
+          <div class="tools">Responsive checks · Interaction testing · QA notes</div>
+        </article>
+      </div>
+    </section>
+
+    <aside class="credential" aria-label="Completed course">
+      <div>
+        <p class="eyebrow">Completed coursework</p>
+        <h2>Google Project Management Professional Certificate</h2>
+        <p>Coursera · Completed</p>
+      </div>
+      <span class="credential-label">Credential link to be added</span>
+    </aside>
+  </main>
+  <section class="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <h2 id="contact-title">See the projects</h2>
+      <p>The project pages show how I apply these skills. I keep concept work separate from ongoing or finished projects.</p>
+      <a href="./#work">View selected work</a>
+    </div>
+  </section>
+  <footer class="footer"><div class="wrap"><span>© 2026 Neo</span><span><a href="https://github.com/Neo0611-code" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="./">Home</a></span></div></footer>
+</body>
+</html>
