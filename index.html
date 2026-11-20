@@ -141,6 +141,68 @@
       *, *::before, *::after { transition-duration: 0s !important; }
     }
     .text-link { border-bottom-color: var(--gold); }
+
+    /* Homepage hero visual reference */
+    .site-header { border-bottom: 0; }
+    .site-header .nav { width: min(100% - 10.5vw, 1450px); min-height: 88px; border-bottom: 1px solid #adb4ad; }
+    .site-header .brand { font: 700 43px/1 Georgia, 'Times New Roman', serif; letter-spacing: -.065em; }
+    .site-header .brand span { color: #c39d4e; }
+    .site-header .nav-links a { font: 500 20px/1.35 Georgia, 'Times New Roman', serif; letter-spacing: 0; text-transform: none; }
+    .hero.hero-reference { width: min(100% - 10.5vw, 1450px); position: relative; display: block; min-height: 845px; padding: 0 0 60px; }
+    .hero-reference .hero-left { width: 60%; padding-top: 79px; }
+    .hero-reference .hero-gold-rule { width: 82px; height: 4px; background: #c39d4e; margin-bottom: 37px; }
+    .hero-reference h1 { margin: 0; max-width: none; font: 400 20px/1 Georgia, 'Times New Roman', serif; letter-spacing: -.045em; }
+    .hero-reference .hero-greeting { display: block; font-size: clamp(38px, 3.3vw, 53px); line-height: 1.14; }
+    .hero-reference .hero-mainline { display: block; margin-top: 22px; font-size: clamp(61px, 5.7vw, 92px); line-height: 1.025; letter-spacing: -.06em; }
+    .hero-reference .hero-highlight { background: linear-gradient(to bottom, transparent 75%, #c8d5be 75%); box-decoration-break: clone; -webkit-box-decoration-break: clone; padding: 0 .06em .025em; margin-left: -.06em; }
+    .hero-reference .hero-statement { margin: 50px 0 21px; font: 400 clamp(23px, 2.12vw, 33px)/1.34 Georgia, 'Times New Roman', serif; letter-spacing: -.012em; }
+    .hero-reference .hero-description { margin: 0; max-width: 760px; font: 400 clamp(16px, 1.4vw, 22px)/1.45 Georgia, 'Times New Roman', serif; color: #3c443e; }
+    .hero-reference .hero-education { margin: 39px 0 0 4px; border-left: 3px solid #c39d4e; padding: 0 0 0 29px; font: 700 clamp(16px, 1.44vw, 22px)/1.37 Georgia, 'Times New Roman', serif; }
+    .hero-reference .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 35px 42px; margin-top: 55px; }
+    .hero-reference .hero-primary { min-height: 61px; padding: 14px 30px; display: inline-flex; align-items: center; gap: 34px; color: #fff; background: #8ba087; border: 1px solid #8ba087; text-decoration: none; font: 400 22px/1.3 Georgia, 'Times New Roman', serif; }
+    .hero-reference .hero-primary:hover { color: #fff; background: #718a73; border-color: #718a73; }
+    .hero-reference .hero-secondary { display: inline-flex; align-items: center; gap: 16px; border-bottom: 2px solid #8ba087; padding-bottom: 6px; text-decoration: none; font: 400 22px/1.3 Georgia, 'Times New Roman', serif; }
+    .hero-reference a:focus-visible { outline: 3px solid #a14d36; outline-offset: 5px; }
+    .hero-reference .hero-photo { position: absolute; z-index: 1; top: 44px; left: 62%; width: 44%; height: 394px; background-color: #a4b49b; background-size: cover; background-position: center; }
+    .hero-reference .hero-photo::after { content: ''; position: absolute; z-index: -1; left: -18.5%; bottom: -30px; width: 53%; height: 62px; background: #c4d0bc; }
+    .hero-reference .hero-projects { position: absolute; left: 60.2%; top: 535px; border-left: 1px solid #a5ada4; padding: 0 0 0 52px; width: 39%; font-family: Georgia, 'Times New Roman', serif; }
+    .hero-reference .hero-projects-label { margin: 0 0 16px; color: #b68d37; font: 700 16px/1.2 var(--sans); letter-spacing: .22em; text-transform: uppercase; }
+    .hero-reference .hero-project-link { display: flex; flex-direction: column; text-decoration: none; margin-bottom: 27px; }
+    .hero-reference .hero-project-link strong { display: block; margin: 0 0 2px; font-size: 34px; line-height: 1.18; font-weight: 400; letter-spacing: -.035em; }
+    .hero-reference .hero-project-link span, .hero-reference .hero-project-link small { display: block; color: #424a43; font-size: 19px; line-height: 1.35; }
+    .hero-reference .hero-project-link small { font-size: 18px; }
+    .hero-reference .hero-project-link:hover strong { color: var(--accent); }
+    @media (max-width: 1180px) {
+      .hero.hero-reference { display: flex; flex-direction: column; min-height: 0; padding-bottom: 85px; }
+      .hero-reference .hero-left { width: 100%; padding-top: 65px; }
+      .hero-reference .hero-mainline { font-size: clamp(56px, 7.2vw, 86px); }
+      .hero-reference .hero-description { max-width: 730px; }
+      .hero-reference .hero-photo { position: relative; left: auto; top: auto; width: 100%; height: clamp(230px, 36vw, 380px); margin: 75px 0 65px; }
+      .hero-reference .hero-photo::after { left: -4%; width: 38%; }
+      .hero-reference .hero-projects { position: relative; top: auto; left: auto; width: 100%; padding-left: 34px; }
+    }
+    @media (max-width: 620px) {
+      .site-header .nav, .hero.hero-reference { width: min(100% - 36px, 1450px); }
+      .site-header .nav { min-height: 76px; padding-block: 16px; align-items: center; }
+      .site-header .brand { font-size: 35px; }
+      .site-header .nav-links a { font-size: 17px; }
+      .hero-reference .hero-left { padding-top: 55px; }
+      .hero-reference .hero-gold-rule { width: 60px; margin-bottom: 30px; }
+      .hero-reference .hero-greeting { font-size: clamp(33px, 9vw, 45px); }
+      .hero-reference .hero-mainline { margin-top: 19px; font-size: clamp(43px, 10.3vw, 64px); line-height: 1.08; }
+      .hero-reference .hero-statement { margin-top: 40px; font-size: clamp(20px, 5.4vw, 26px); }
+      .hero-reference .hero-description { font-size: 17px; }
+      .hero-reference .hero-education { margin-top: 30px; padding-left: 18px; font-size: 16px; }
+      .hero-reference .hero-education br { display: none; }
+      .hero-reference .hero-actions { margin-top: 37px; gap: 22px; }
+      .hero-reference .hero-primary { font-size: 19px; padding: 12px 20px; min-height: 56px; gap: 22px; }
+      .hero-reference .hero-secondary { font-size: 19px; }
+      .hero-reference .hero-photo { margin: 55px 0 65px; height: 260px; }
+      .hero-reference .hero-projects { padding-left: 22px; }
+      .hero-reference .hero-project-link strong { font-size: 30px; }
+      .hero-reference .hero-project-link span, .hero-reference .hero-project-link small { font-size: 16px; }
+      .hero-reference .hero-projects-label { font-size: 12px; }
+    }
   </style>
 </head>
 <body>
@@ -154,20 +216,34 @@
     </nav>
   </header>
   <main id="top">
-    <section class="hero wrap" aria-labelledby="intro-title">
-      <div>
-        <div class="eyebrow">Neo · Based in Malaysia</div>
-        <h1 id="intro-title">I like figuring out what to build, and making it work.</h1>
-        <p class="education-line">Bachelor's degree in Software System Development · Expected graduation: October 2027</p>
-        <div class="hero-intro">
-          <p>I'm working toward product management roles and building software projects around applied AI and connected systems.</p>
+
+    <section class="hero hero-reference wrap" aria-labelledby="intro-title">
+      <div class="hero-left">
+        <div class="hero-gold-rule" aria-hidden="true"></div>
+        <h1 id="intro-title">
+          <span class="hero-greeting">Hi, I’m Neo.</span>
+          <span class="hero-mainline">Learning to build<br><span class="hero-highlight">better products.</span></span>
+        </h1>
+        <p class="hero-statement">Product management is where I’m headed.<br>Building is how I learn.</p>
+        <p class="hero-description">A Software System Development student, interested in Applied AI and practical prototypes that turn ideas into real, usable solutions.</p>
+        <p class="hero-education">Bachelor’s degree in Software System Development<br>Expected graduation: October 2027</p>
+        <div class="hero-actions">
+          <a class="hero-primary" href="#work">Explore projects <span aria-hidden="true">⟶</span></a>
+          <a class="hero-secondary" href="skills.html">Skills &amp; tools <span aria-hidden="true">⟶</span></a>
         </div>
-        <p style="margin-top:30px"><a class="text-link" href="#work">View projects <span class="arrow" aria-hidden="true">↗</span></a> <a class="text-link" style="margin-left:24px" href="skills.html">Skills &amp; tools</a></p>
       </div>
-      <aside class="hero-aside" aria-label="Current focus">
-        <p class="eyebrow">Current project</p>
-        <p><strong>DryNest</strong><br>Working through how users control a connected drying system, from rain response to manual and scheduled modes.</p>
-        <a class="text-link" href="#drynest">View DryNest <span class="arrow" aria-hidden="true">↗</span></a>
+      <div class="hero-photo" role="img" aria-label="Soft leaf shadows on a sage-green wall" style="background-image:url(data:image/jpeg;base64,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)"></div>
+      <aside class="hero-projects" aria-label="Featured projects">
+        <div class="hero-projects-label">Projects</div>
+        <a href="#drynest" class="hero-project-link">
+          <strong>DryNest</strong>
+          <span>Smart retractable drying system (in progress)</span>
+          <small>ESP32 · PWA · Firebase</small>
+        </a>
+        <a href="#motive-title" class="hero-project-link">
+          <strong>MOTIVE</strong>
+          <span>Car-care enquiry page concept (UI/UX, bilingual)</span>
+        </a>
       </aside>
     </section>
     <section id="work" class="wrap" aria-labelledby="work-title">
