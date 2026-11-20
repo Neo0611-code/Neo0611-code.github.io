@@ -142,66 +142,66 @@
     }
     .text-link { border-bottom-color: var(--gold); }
 
-    /* Homepage hero visual reference */
+    /* Homepage hero, aligned to the site's type scale */
     .site-header { border-bottom: 0; }
-    .site-header .nav { width: min(100% - 10.5vw, 1450px); min-height: 88px; border-bottom: 1px solid #adb4ad; }
-    .site-header .brand { font: 700 43px/1 Georgia, 'Times New Roman', serif; letter-spacing: -.065em; }
-    .site-header .brand span { color: #c39d4e; }
-    .site-header .nav-links a { font: 500 20px/1.35 Georgia, 'Times New Roman', serif; letter-spacing: 0; text-transform: none; }
-    .hero.hero-reference { width: min(100% - 10.5vw, 1450px); position: relative; display: block; min-height: 845px; padding: 0 0 60px; }
-    .hero-reference .hero-left { width: 60%; padding-top: 79px; }
-    .hero-reference .hero-gold-rule { width: 82px; height: 4px; background: #c39d4e; margin-bottom: 37px; }
-    .hero-reference h1 { margin: 0; max-width: none; font: 400 20px/1 Georgia, 'Times New Roman', serif; letter-spacing: -.045em; }
-    .hero-reference .hero-greeting { display: block; font-size: clamp(38px, 3.3vw, 53px); line-height: 1.14; }
-    .hero-reference .hero-mainline { display: block; margin-top: 22px; font-size: clamp(61px, 5.7vw, 92px); line-height: 1.025; letter-spacing: -.06em; }
-    .hero-reference .hero-highlight { background: linear-gradient(to bottom, transparent 75%, #c8d5be 75%); box-decoration-break: clone; -webkit-box-decoration-break: clone; padding: 0 .06em .025em; margin-left: -.06em; }
-    .hero-reference .hero-statement { margin: 50px 0 21px; font: 400 clamp(23px, 2.12vw, 33px)/1.34 Georgia, 'Times New Roman', serif; letter-spacing: -.012em; }
-    .hero-reference .hero-description { margin: 0; max-width: 760px; font: 400 clamp(16px, 1.4vw, 22px)/1.45 Georgia, 'Times New Roman', serif; color: #3c443e; }
-    .hero-reference .hero-education { margin: 39px 0 0 4px; border-left: 3px solid #c39d4e; padding: 0 0 0 29px; font: 700 clamp(16px, 1.44vw, 22px)/1.37 Georgia, 'Times New Roman', serif; }
-    .hero-reference .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 35px 42px; margin-top: 55px; }
-    .hero-reference .hero-primary { min-height: 61px; padding: 14px 30px; display: inline-flex; align-items: center; gap: 34px; color: #fff; background: #8ba087; border: 1px solid #8ba087; text-decoration: none; font: 400 22px/1.3 Georgia, 'Times New Roman', serif; }
-    .hero-reference .hero-primary:hover { color: #fff; background: #718a73; border-color: #718a73; }
-    .hero-reference .hero-secondary { display: inline-flex; align-items: center; gap: 16px; border-bottom: 2px solid #8ba087; padding-bottom: 6px; text-decoration: none; font: 400 22px/1.3 Georgia, 'Times New Roman', serif; }
-    .hero-reference a:focus-visible { outline: 3px solid #a14d36; outline-offset: 5px; }
-    .hero-reference .hero-photo { position: absolute; z-index: 1; top: 44px; left: 62%; width: 44%; height: 394px; background-color: #a4b49b; background-size: cover; background-position: center; }
-    .hero-reference .hero-photo::after { content: ''; position: absolute; z-index: -1; left: -18.5%; bottom: -30px; width: 53%; height: 62px; background: #c4d0bc; }
-    .hero-reference .hero-projects { position: absolute; left: 60.2%; top: 535px; border-left: 1px solid #a5ada4; padding: 0 0 0 52px; width: 39%; font-family: Georgia, 'Times New Roman', serif; }
-    .hero-reference .hero-projects-label { margin: 0 0 16px; color: #b68d37; font: 700 16px/1.2 var(--sans); letter-spacing: .22em; text-transform: uppercase; }
-    .hero-reference .hero-project-link { display: flex; flex-direction: column; text-decoration: none; margin-bottom: 27px; }
-    .hero-reference .hero-project-link strong { display: block; margin: 0 0 2px; font-size: 34px; line-height: 1.18; font-weight: 400; letter-spacing: -.035em; }
-    .hero-reference .hero-project-link span, .hero-reference .hero-project-link small { display: block; color: #424a43; font-size: 19px; line-height: 1.35; }
-    .hero-reference .hero-project-link small { font-size: 18px; }
-    .hero-reference .hero-project-link:hover strong { color: var(--accent); }
-    @media (max-width: 1180px) {
-      .hero.hero-reference { display: flex; flex-direction: column; min-height: 0; padding-bottom: 85px; }
-      .hero-reference .hero-left { width: 100%; padding-top: 65px; }
-      .hero-reference .hero-mainline { font-size: clamp(56px, 7.2vw, 86px); }
-      .hero-reference .hero-description { max-width: 730px; }
-      .hero-reference .hero-photo { position: relative; left: auto; top: auto; width: 100%; height: clamp(230px, 36vw, 380px); margin: 75px 0 65px; }
-      .hero-reference .hero-photo::after { left: -4%; width: 38%; }
-      .hero-reference .hero-projects { position: relative; top: auto; left: auto; width: 100%; padding-left: 34px; }
+    .site-header .nav { width: min(100% - 72px, 1190px); min-height: 84px; border-bottom: 1px solid var(--line); }
+    .site-header .brand { font: 700 29px/1 var(--sans); letter-spacing: -.07em; }
+    .site-header .brand span { color: var(--gold); }
+    .site-header .nav-links a { font: 650 14px/1.4 var(--sans); letter-spacing: .02em; text-transform: none; }
+    .hero.hero-reference { width: min(100% - 72px, 1190px); position: relative; display: block; min-height: 710px; padding: 0 0 54px; }
+    .hero-reference .hero-left { width: 60%; padding-top: 66px; }
+    .hero-reference .hero-gold-rule { width: 65px; height: 3px; background: var(--gold); margin-bottom: 29px; }
+    .hero-reference h1 { max-width: none; margin: 0; font: 650 18px/1.14 var(--sans); letter-spacing: -.042em; }
+    .hero-reference .hero-greeting { display: block; font-size: clamp(27px, 2.4vw, 33px); font-weight: 550; line-height: 1.2; letter-spacing: -.03em; }
+    .hero-reference .hero-mainline { display: block; margin-top: 16px; font-size: clamp(46px, 4.3vw, 60px); line-height: 1.12; letter-spacing: -.049em; }
+    .hero-reference .hero-highlight { background: linear-gradient(to bottom, transparent 78%, #c8d5be 78%); box-decoration-break: clone; -webkit-box-decoration-break: clone; padding: 0 .04em .02em; margin-left: -.04em; }
+    .hero-reference .hero-statement { margin: 33px 0 17px; font: 500 clamp(18px, 1.55vw, 21px)/1.45 var(--sans); letter-spacing: -.016em; }
+    .hero-reference .hero-description { margin: 0; max-width: 660px; font: 400 16px/1.65 var(--sans); color: var(--muted); }
+    .hero-reference .hero-education { margin: 26px 0 0 2px; border-left: 2px solid var(--gold); padding: 0 0 0 18px; font: 600 15px/1.55 var(--sans); }
+    .hero-reference .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 22px 30px; margin-top: 32px; }
+    .hero-reference .hero-primary { min-height: 48px; padding: 12px 19px; display: inline-flex; align-items: center; gap: 23px; color: #fff; background: var(--sage); border: 1px solid var(--sage); text-decoration: none; font: 650 14px/1.3 var(--sans); }
+    .hero-reference .hero-primary:hover { color: #fff; background: var(--accent-strong); border-color: var(--accent-strong); }
+    .hero-reference .hero-secondary { display: inline-flex; align-items: center; gap: 12px; border-bottom: 1px solid var(--sage); padding-bottom: 5px; text-decoration: none; font: 650 14px/1.3 var(--sans); }
+    .hero-reference a:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
+    .hero-reference .hero-photo { position: absolute; z-index: 1; top: 42px; left: 63%; width: 37%; height: 307px; background-color: #a4b49b; background-size: cover; background-position: center; }
+    .hero-reference .hero-photo::after { content: ''; position: absolute; z-index: -1; left: -15%; bottom: -22px; width: 52%; height: 44px; background: #c4d0bc; }
+    .hero-reference .hero-projects { position: absolute; left: 63%; top: 403px; border-left: 1px solid var(--line); padding: 0 0 0 29px; width: 37%; font-family: var(--sans); }
+    .hero-reference .hero-projects-label { margin: 0 0 14px; color: #a17c30; font: 700 11px/1.3 var(--sans); letter-spacing: .17em; text-transform: uppercase; }
+    .hero-reference .hero-project-link { display: flex; flex-direction: column; text-decoration: none; margin-bottom: 22px; }
+    .hero-reference .hero-project-link strong { display: block; margin: 0 0 4px; font-size: 24px; line-height: 1.25; font-weight: 650; letter-spacing: -.035em; }
+    .hero-reference .hero-project-link span, .hero-reference .hero-project-link small { display: block; color: var(--muted); font-size: 14px; line-height: 1.55; }
+    .hero-reference .hero-project-link small { font-size: 13px; }
+    .hero-reference .hero-project-link:hover strong { color: var(--accent-strong); }
+    @media (max-width: 1100px) {
+      .hero.hero-reference { display: flex; flex-direction: column; min-height: 0; padding-bottom: 74px; }
+      .hero-reference .hero-left { width: 100%; padding-top: 60px; }
+      .hero-reference .hero-mainline { font-size: clamp(46px, 5.3vw, 60px); }
+      .hero-reference .hero-description { max-width: 700px; }
+      .hero-reference .hero-photo { position: relative; left: auto; top: auto; width: 100%; height: clamp(220px, 31vw, 340px); margin: 54px 0 50px; }
+      .hero-reference .hero-photo::after { left: -3%; width: 35%; }
+      .hero-reference .hero-projects { position: relative; top: auto; left: auto; width: 100%; padding-left: 24px; }
     }
     @media (max-width: 620px) {
-      .site-header .nav, .hero.hero-reference { width: min(100% - 36px, 1450px); }
-      .site-header .nav { min-height: 76px; padding-block: 16px; align-items: center; }
-      .site-header .brand { font-size: 35px; }
-      .site-header .nav-links a { font-size: 17px; }
-      .hero-reference .hero-left { padding-top: 55px; }
-      .hero-reference .hero-gold-rule { width: 60px; margin-bottom: 30px; }
-      .hero-reference .hero-greeting { font-size: clamp(33px, 9vw, 45px); }
-      .hero-reference .hero-mainline { margin-top: 19px; font-size: clamp(43px, 10.3vw, 64px); line-height: 1.08; }
-      .hero-reference .hero-statement { margin-top: 40px; font-size: clamp(20px, 5.4vw, 26px); }
-      .hero-reference .hero-description { font-size: 17px; }
-      .hero-reference .hero-education { margin-top: 30px; padding-left: 18px; font-size: 16px; }
+      .site-header .nav, .hero.hero-reference { width: min(100% - 36px, 1190px); }
+      .site-header .nav { min-height: 74px; padding-block: 18px; align-items: center; }
+      .site-header .brand { font-size: 29px; }
+      .site-header .nav-links a { font-size: 13px; }
+      .hero-reference .hero-left { padding-top: 47px; }
+      .hero-reference .hero-gold-rule { width: 51px; margin-bottom: 24px; }
+      .hero-reference .hero-greeting { font-size: 25px; }
+      .hero-reference .hero-mainline { margin-top: 15px; font-size: clamp(32px, 8.4vw, 43px); line-height: 1.13; }
+      .hero-reference .hero-statement { margin-top: 30px; font-size: 18px; }
+      .hero-reference .hero-description { font-size: 15px; }
+      .hero-reference .hero-education { margin-top: 24px; padding-left: 15px; font-size: 14px; }
       .hero-reference .hero-education br { display: none; }
-      .hero-reference .hero-actions { margin-top: 37px; gap: 22px; }
-      .hero-reference .hero-primary { font-size: 19px; padding: 12px 20px; min-height: 56px; gap: 22px; }
-      .hero-reference .hero-secondary { font-size: 19px; }
-      .hero-reference .hero-photo { margin: 55px 0 65px; height: 260px; }
-      .hero-reference .hero-projects { padding-left: 22px; }
-      .hero-reference .hero-project-link strong { font-size: 30px; }
-      .hero-reference .hero-project-link span, .hero-reference .hero-project-link small { font-size: 16px; }
-      .hero-reference .hero-projects-label { font-size: 12px; }
+      .hero-reference .hero-actions { margin-top: 28px; gap: 19px 25px; }
+      .hero-reference .hero-primary { font-size: 14px; padding: 11px 16px; min-height: 45px; gap: 16px; }
+      .hero-reference .hero-secondary { font-size: 14px; }
+      .hero-reference .hero-photo { margin: 45px 0 52px; height: 240px; }
+      .hero-reference .hero-projects { padding-left: 19px; }
+      .hero-reference .hero-project-link strong { font-size: 22px; }
+      .hero-reference .hero-project-link span, .hero-reference .hero-project-link small { font-size: 14px; }
+      .hero-reference .hero-projects-label { font-size: 11px; }
     }
   </style>
 </head>
