@@ -83,6 +83,58 @@
     }
     @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
     .skill h3 { text-decoration: none; }
+
+    /* Shared site header: identical on home and Skills */
+    .site-header { border-bottom: 0; }
+    .site-header .nav {
+      width: min(100% - 72px, 1190px);
+      min-height: 84px;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      gap: 24px;
+      border-bottom: 1px solid var(--line);
+    }
+    .site-header .brand {
+      display: inline-block;
+      padding: 0;
+      font: 700 29px/1 var(--font-main);
+      letter-spacing: -.07em;
+      text-decoration: none;
+    }
+    .site-header .brand span { color: var(--gold); }
+    .site-header .nav-links {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-wrap: nowrap;
+      gap: clamp(18px, 3vw, 38px);
+    }
+    .site-header .nav-links a,
+    .site-header .nav-links a[aria-current="page"] {
+      color: inherit;
+      font: 650 14px/1.4 var(--font-main);
+      letter-spacing: .02em;
+      text-transform: none;
+      text-decoration: none;
+    }
+    .site-header .nav-links a:hover,
+    .site-header .nav-links a[aria-current="page"]:hover {
+      text-decoration: underline;
+      text-underline-offset: 6px;
+    }
+    @media (max-width: 620px) {
+      .site-header .nav { width: min(100% - 36px, 1190px); min-height: 74px; padding: 0; gap: 16px; }
+      .site-header .brand { font-size: 29px; padding: 0; }
+      .site-header .nav-links { gap: 18px; }
+      .site-header .nav-links a,
+      .site-header .nav-links a[aria-current="page"] { font-size: 13px; }
+    }
+    @media (max-width: 360px) {
+      .site-header .nav-links { gap: 12px; }
+    }
   </style>
 </head>
 <body>
